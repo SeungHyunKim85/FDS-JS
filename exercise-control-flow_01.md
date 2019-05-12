@@ -35,7 +35,6 @@ for (let i = 0; i < 10; i++) {
     string1 += i;
   }
 }
-
 console.log(string1);
 ```
 ```

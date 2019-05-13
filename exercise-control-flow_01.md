@@ -14,14 +14,7 @@ for (let i = 0; i < 10; i++) {
     console.log(i);
 };
 ```
-```
-// 4
-for (let i = 10; i >= 0; i--) {
-  
-  if (i % 2 == 1)
-    console.log(i);
-}
-```
+
 ```
 // 3
 let string1 = '';
@@ -36,6 +29,14 @@ for (let i = 0; i < 10; i++) {
   }
 }
 console.log(string1);
+```
+```
+// 4
+for (let i = 10; i >= 0; i--) {
+  
+  if (i % 2 == 1)
+    console.log(i);
+}
 ```
 ```
 // 5

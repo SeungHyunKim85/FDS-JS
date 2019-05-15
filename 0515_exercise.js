@@ -25,7 +25,7 @@ console.log(evenOrOdd3(1000));
 
 
 // 2
-// 강사님 
+// 강사님 풀이
 function getCount8() {
   let str = '';
   let sum = 0;
@@ -46,5 +46,17 @@ function getCount8() {
 console.log(getCount8());
 
 // 3
+
+function alphaString46(s) {
+  if (s !== undefined && s.length > 3 && s.length < 7 && Number(s)) {
+    return 'true';
+  } return 'false';
+}
+
+console.log(alphaString46('1234')); // true
+console.log(alphaString46('9014')); // true
+console.log(alphaString46('723')); // false
+console.log(alphaString46('a234')); // false
+console.log(alphaString46('')); // false
 
 

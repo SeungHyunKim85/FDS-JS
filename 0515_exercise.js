@@ -26,5 +26,25 @@ console.log(evenOrOdd3(1000));
 
 // 2
 
+function getCount8() {
+  let str = '';
+  let sum = 0;
+
+  for (let i = 1; i < 10001; i++) {
+    str += i;
+  }
+
+  // console.log(str);
+
+  for (let j = 1; j < str.length; j++) {
+    if (str[j] === '8') ++sum;
+  }
+
+  return sum;
+}
+
+console.log(getCount8());
 
 // 3
+
+

@@ -25,7 +25,7 @@ console.log(evenOrOdd3(1000));
 
 
 // 2
-
+// 강사님 
 function getCount8() {
   let str = '';
   let sum = 0;

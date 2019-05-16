@@ -118,22 +118,46 @@ console.log(fixFloat(15.5678, 1));
 fixFloat(10.12345, 2); // 10.12
 fixFloat(15.5678, 1); // 15.6
 
-# 문제 7
+//# 문제 7
+//
+//Camel case의 문자열을 입력받아, snake case로 바꾼 새 문자열을 반환하는 함수를 작성하세요.
+//
+//```js
+//camelToSnake('helloWorld'); // 'hello_world'
+//```
 
-Camel case의 문자열을 입력받아, snake case로 바꾼 새 문자열을 반환하는 함수를 작성하세요.
+// 7
+function camelToSnake(str) {
+  
 
-```js
-camelToSnake('helloWorld'); // 'hello_world'
-```
 
-# 문제 8
+//# 문제 8
+//
+//Snake case의 문자열을 입력받아, camel case로 바꾼 새 문자열을 반환하는 함수를 작성하세요.
+//
+//```js
+//snakeToCamel('hello_world_javascript'); // 'helloWorldJavascript'
+//```
 
-Snake case의 문자열을 입력받아, camel case로 바꾼 새 문자열을 반환하는 함수를 작성하세요.
+// 8
 
-```js
-snakeToCamel('hello_world_javascript'); // 'helloWorldJavascript'
-```
+function snakeToCamel(str) {
+  let result = '';
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === '_') {
+      result += str[i + 1].toUpperCase();
+      i += 1;
+    } else {
+      result += str[i];
+    }
+  }
+  return result;
+}
 
+console.log(snakeToCamel('hello_world_javascript')); // 'hello_world'
+console.log(snakeToCamel('hello_world'));
+  
+  
 # 문제 9
 
 2016년 1월 1일은 금요일입니다. 2016년 a월 b일은 무슨 요일일까요? 두 수 a ,b를 입력받아 2016년 a월 b일이 무슨 요일인지 리턴하는 함수, solution을 완성하세요. 요일의 이름은 일요일부터 토요일까지 각각 SUN,MON,TUE,WED,THU,FRI,SAT

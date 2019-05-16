@@ -98,14 +98,25 @@ function randomRgbCode() {
 console.log(randomRgbCode());
 console.log(randomRgbCode());
 
-# 문제 6
+//# 문제 6
+//
+//소수인 숫자와, 자릿수를 받아서 소수를 자리수만큼만 자른 뒤 반환하는 함수를 작성하세요.
+//
+//```js
+//fixFloat(10.12345, 2); // 10.12
+//fixFloat(15.5678, 1); // 15.6
+//```
 
-소수인 숫자와, 자릿수를 받아서 소수를 자리수만큼만 자른 뒤 반환하는 함수를 작성하세요.
+// 6 
 
-```js
+function fixFloat(num1, num2) {
+  return num1.toFixed(num2);
+}
+
+console.log(fixFloat(10.12345, 2));
+console.log(fixFloat(15.5678, 1));
 fixFloat(10.12345, 2); // 10.12
 fixFloat(15.5678, 1); // 15.6
-```
 
 # 문제 7
 

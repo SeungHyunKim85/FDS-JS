@@ -83,6 +83,21 @@ console.log(htmlHexCode());
 //randomRgbCode(); // rgb(12, 3, 223);
 //```
 
+// 5
+
+function randomRgbCode() {
+  let random1 = 0;
+  let random2 = 0;
+  let random3 = 0;
+  random1 = Math.floor(Math.random() * 255) + 1;
+  random2 = Math.floor(Math.random() * 255) + 1;
+  random3 = Math.floor(Math.random() * 255) + 1;
+  return 'rgb(' + random1 + ',' + random2 + ',' + random3 + ')' + ';';
+}
+
+console.log(randomRgbCode());
+console.log(randomRgbCode());
+
 # 문제 6
 
 소수인 숫자와, 자릿수를 받아서 소수를 자리수만큼만 자른 뒤 반환하는 함수를 작성하세요.

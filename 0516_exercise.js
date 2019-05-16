@@ -46,10 +46,10 @@ console.log(minToMax(2, 8));
 //ceilBy5(37); -> 40
 //```
 
-function ceilBy5(n1, n2) {
-  let random = 0;
-  random = Math.floor((Math.random() * (n2 - n1 + 1)) + n1);
-  return random;
+function ceilBy5(n) {
+  let num = 0;
+  num = Math.ceil(n / 5) * 5;
+  return num;
 }
 
 console.log(ceilBy5(30)); // 30

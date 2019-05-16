@@ -65,14 +65,23 @@ console.log(ceilBy5(37)); // 40
 //htmlHexCode(); // #00FF12
 //```
 
-# 문제 5
+//4
 
-rgb색상코드를 랜덤으로 반환하는 함수를 작성하세요.
+function htmlHexCode() {
+  return '#' + Math.floor(Math.random()*0xFFFFFF).toString(16);
+}
 
-```js
-randomRgbCode(); // rgb(123, 44, 254);
-randomRgbCode(); // rgb(12, 3, 223);
-```
+console.log(htmlHexCode());
+console.log(htmlHexCode());
+
+//# 문제 5
+//
+//rgb색상코드를 랜덤으로 반환하는 함수를 작성하세요.
+//
+//```js
+//randomRgbCode(); // rgb(123, 44, 254);
+//randomRgbCode(); // rgb(12, 3, 223);
+//```
 
 # 문제 6
 

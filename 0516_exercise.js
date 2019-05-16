@@ -6,6 +6,7 @@
 //```js
 //circleArea(10); // 314.1592653589793
 ```
+
 // 1 
 
 function circleArea(n) {
@@ -13,9 +14,6 @@ function circleArea(n) {
 }
 
 console.log(circleArea(10));
-
-//2
-
 
 //# 문제 2
 //
@@ -25,26 +23,47 @@ console.log(circleArea(10));
 //minToMax(2, 8); // 2 ~ 7 중 랜덤의 수
 //```
 
-# 문제 3
+//2
 
-정수를 입력받아, 5 단위로 올림한 수를 반환하는 함수를 작성하세요.
+function minToMax(n1, n2) {
+  let random = 0;
+  random = Math.floor((Math.random() * (n2 - n1 + 1)) + n1);
+  return random;
+}
 
-예:
+console.log(minToMax(2, 8));
 
-```js
-ceilBy5(30); -> 30
-ceilBy5(32); -> 35
-ceilBy5(37); -> 40
-```
 
-# 문제 4
+//# 문제 3
+//
+//정수를 입력받아, 5 단위로 올림한 수를 반환하는 함수를 작성하세요.
+//
+//예:
+//
+//```js
+//ceilBy5(30); -> 30
+//ceilBy5(32); -> 35
+//ceilBy5(37); -> 40
+//```
 
-임의의 HTML 색상 코드를 반환하는 함수를 작성하세요.
+function ceilBy5(n1, n2) {
+  let random = 0;
+  random = Math.floor((Math.random() * (n2 - n1 + 1)) + n1);
+  return random;
+}
 
-```js
-htmlHexCode(); // #92F01A
-htmlHexCode(); // #00FF12
-```
+console.log(ceilBy5(30)); // 30
+console.log(ceilBy5(32)); // 35
+console.log(ceilBy5(37)); // 40
+
+//# 문제 4
+//
+//임의의 HTML 색상 코드를 반환하는 함수를 작성하세요.
+//
+//```js
+//htmlHexCode(); // #92F01A
+//htmlHexCode(); // #00FF12
+//```
 
 # 문제 5
 

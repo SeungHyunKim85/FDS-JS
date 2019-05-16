@@ -127,9 +127,21 @@ fixFloat(15.5678, 1); // 15.6
 //```
 
 // 7
-function camelToSnake(str) {
-  
 
+function camelToSnake(str) {
+  let result = '';
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === str[i].toUpperCase) {
+      result = '_' + str[i].toLowerCase;
+      i += 1;
+    } else {
+      result += str[i];
+    }
+  }
+  return result;
+}
+
+console.log(camelToSnake('helloWorld')); // 'hello_world'
 
 //# 문제 8
 //

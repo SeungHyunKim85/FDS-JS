@@ -27,7 +27,7 @@ console.log(circleArea(10));
 
 function minToMax(n1, n2) {
   let random = 0;
-  random = Math.floor((Math.random() * (n2 - n1 + 1)) + n1);
+  random = Math.floor((Math.random() * (n2 - n1)) + n1);
   return random;
 }
 

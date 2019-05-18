@@ -1,3 +1,4 @@
+## 몇번
 ```function getMaxValueFromArray(array) {
   // return Math.max.apply(null, array);
   return Math.max(...array);
@@ -11,7 +12,7 @@ function getMinValueFromArray(array) {
 }
 console.log(getMinValueFromArray([3, 6, -2, -5, 7, 3]));
 ```
-
+## 몇번
 ```
 function numPY(s) {
   const str = s ? s.toUpperCase() : '';
@@ -33,7 +34,7 @@ console.log(numPY('ab'));      // true
 console.log(numPY(''));        // true
 console.log(numPY());          // true
 ```
-
+## 몇번
 ```
 function toWeirdCase(s) {
   const str = s.split(' ');
@@ -76,7 +77,7 @@ function toWeirdCase(s) {
 console.log(toWeirdCase('hello world'));    // 'HeLlO WoRlD'
 console.log(toWeirdCase('my name is lee')); // 'My NaMe Is LeE'
 ```
-
+## 몇번
 ```
 function strToInt(str) {
   return parseInt(str);

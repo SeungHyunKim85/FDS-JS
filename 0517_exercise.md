@@ -12,7 +12,7 @@ function getMinValueFromArray(array) {
 console.log(getMinValueFromArray([3, 6, -2, -5, 7, 3]));
 ```
 
-
+```
 function numPY(s) {
   const str = s ? s.toUpperCase() : '';
 
@@ -32,8 +32,9 @@ console.log(numPY('Pyy'));     // false
 console.log(numPY('ab'));      // true
 console.log(numPY(''));        // true
 console.log(numPY());          // true
+```
 
-
+```
 function toWeirdCase(s) {
   const str = s.split(' ');
   let str1 = '';
@@ -55,7 +56,6 @@ function toWeirdCase(s) {
 
 function toWeirdCase(s) {
   const wordArr = s.split(' ');
-
   function toUpperLower(str) {
     let res = '';
     for (let i = 0; i < str.length; i++) {
@@ -75,7 +75,9 @@ function toWeirdCase(s) {
 
 console.log(toWeirdCase('hello world'));    // 'HeLlO WoRlD'
 console.log(toWeirdCase('my name is lee')); // 'My NaMe Is LeE'
+```
 
+```
 function strToInt(str) {
   return parseInt(str);
   // +str; str *1; Number(str)
@@ -84,3 +86,4 @@ function strToInt(str) {
 
 console.log(strToInt('1234'));  // 1234
 console.log(strToInt('-1234')); // -1234
+```

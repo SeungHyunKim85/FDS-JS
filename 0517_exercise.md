@@ -1,18 +1,5 @@
-## 몇번
-```function getMaxValueFromArray(array) {
-  // return Math.max.apply(null, array);
-  return Math.max(...array);
-}
 
-console.log(getMaxValueFromArray([3, 6, -2, -5, 7, 3]));
-
-function getMinValueFromArray(array) {
-  // return Math.min.apply(null, array);
-  return Math.min(...array);
-}
-console.log(getMinValueFromArray([3, 6, -2, -5, 7, 3]));
-```
-## 몇번
+## 4번
 ```
 function numPY(s) {
   const str = s ? s.toUpperCase() : '';
@@ -34,7 +21,8 @@ console.log(numPY('ab'));      // true
 console.log(numPY(''));        // true
 console.log(numPY());          // true
 ```
-## 몇번
+
+## 5번
 ```
 function toWeirdCase(s) {
   const str = s.split(' ');
@@ -77,7 +65,8 @@ function toWeirdCase(s) {
 console.log(toWeirdCase('hello world'));    // 'HeLlO WoRlD'
 console.log(toWeirdCase('my name is lee')); // 'My NaMe Is LeE'
 ```
-## 몇번
+
+## 7번
 ```
 function strToInt(str) {
   return parseInt(str);
@@ -89,6 +78,50 @@ console.log(strToInt('1234'));  // 1234
 console.log(strToInt('-1234')); // -1234
 ```
 
-## 몇번
-## 몇번
-## 몇번
+## 6번
+```
+
+```
+
+## 8번
+```
+function waterMelon(n) {
+  let str = '';
+  for (let i = 0; i < n; i++) {
+    if (i % 2 === 0) {
+      str += '수';
+    }
+    else {
+      str += '박';
+    }
+  }
+  return str;
+}
+
+console.log('n이 3인 경우: '+ waterMelon(3));
+console.log('n이 4인 경우: '+ waterMelon(4));
+console.log('n이 5인 경우: '+ waterMelon(5));
+console.log('n이 6인 경우: '+ waterMelon(6));
+console.log('n이 7인 경우: '+ waterMelon(7));
+```
+
+## 9번
+```
+
+```
+
+## 10번
+```
+function getMaxValueFromArray(array) {
+  // return Math.max.apply(null, array);
+  return Math.max(...array);
+}
+
+console.log(getMaxValueFromArray([3, 6, -2, -5, 7, 3]));
+
+function getMinValueFromArray(array) {
+  // return Math.min.apply(null, array);
+  return Math.min(...array);
+}
+console.log(getMinValueFromArray([3, 6, -2, -5, 7, 3]));
+```

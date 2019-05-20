@@ -24,24 +24,24 @@ console.log(numPY());          // true
 
 ## 5번
 ```
-function toWeirdCase(s) {
-  const str = s.split(' ');
-  let str1 = '';
-  let str2 = '';
-  let str3 = '';
-
-  for (let i = 0; i < s.length; i++) {
-    for (let j = 0; j < str.length; j++) {
-      if (str[j] % 2 === 0) {
-        str1 = str[j].toLowerCase();
-      }
-      else if (str[j] % 2 !== 0) {
-        str2 = str[j].toUpperCase();
-      }
-    }
-  }
-  return str3 = str2.concat(str1);
-}
+//function toWeirdCase(s) {
+//  const str = s.split(' ');
+//  let str1 = '';
+//  let str2 = '';
+//  let str3 = '';
+//
+//  for (let i = 0; i < s.length; i++) {
+//    for (let j = 0; j < str.length; j++) {
+//      if (str[j] % 2 === 0) {
+//        str1 = str[j].toLowerCase();
+//      }
+//      else if (str[j] % 2 !== 0) {
+//        str2 = str[j].toUpperCase();
+//     }
+//    }
+//   }
+//  return str3 = str2.concat(str1);
+//}
 
 function toWeirdCase(s) {
   const wordArr = s.split(' ');

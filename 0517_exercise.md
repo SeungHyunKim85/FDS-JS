@@ -112,7 +112,20 @@ console.log('n이 7인 경우: '+ waterMelon(7));
 
 ## 9번
 ```
+function nextSqaure(n){
+  const result = Math.sqrt(n);
 
+  return Number.isInteger(result) ? Math.pow((result + 1), 2) : 'no';
+}
+
+console.log(nextSqaure());    // no
+console.log(nextSqaure(0));   // 1
+console.log(nextSqaure(1));   // 4
+console.log(nextSqaure(2));   // no
+console.log(nextSqaure(3));   // no
+console.log(nextSqaure(121)); // 144
+console.log(nextSqaure(165)); // no
+console.log(nextSqaure(400)); // 441
 ```
 
 ## 10번

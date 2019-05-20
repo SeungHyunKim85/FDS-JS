@@ -66,6 +66,16 @@ console.log(toWeirdCase('hello world'));    // 'HeLlO WoRlD'
 console.log(toWeirdCase('my name is lee')); // 'My NaMe Is LeE'
 ```
 
+## 6번
+```
+function hideNumbers(str) {
+  return '*'.repeat(str.length - 4) + str.slice(-4);
+}
+
+console.log(hideNumbers('01033334444')); // *******4444
+console.log(hideNumbers('027778888'));   // *****8888
+```
+
 ## 7번
 ```
 function strToInt(str) {
@@ -76,11 +86,6 @@ function strToInt(str) {
 
 console.log(strToInt('1234'));  // 1234
 console.log(strToInt('-1234')); // -1234
-```
-
-## 6번
-```
-
 ```
 
 ## 8번

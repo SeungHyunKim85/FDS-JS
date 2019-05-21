@@ -13,7 +13,8 @@ function render() {
     html +=   
  `<li id="${todos.id}">
     <label><input type="checkbox ${todos.completed}">${todos.content}</label>
-  </li>`;
+  </li>
+  `;
   });
 
   return html;

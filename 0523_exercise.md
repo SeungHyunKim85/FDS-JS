@@ -8,7 +8,7 @@
   <title>Document</title>
   <style>
     li.todo {
-      text-decoration-line : " ";
+      text-decoration-line : "";
     }
   </style>
 </head>

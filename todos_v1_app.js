@@ -5,9 +5,9 @@
       </li> */
 
 let todos = [
-  { id: 1, content: 'HTML', completed: true },
-  { id: 2, content: 'CSS', completed: true },
-  { id: 3, content: 'Javascript', completed: false }
+  { myId: 1, content: 'HTML', completed: true },
+  { myId: 2, content: 'CSS', completed: true },
+  { myId: 3, content: 'Javascript', completed: false }
 ];
 
 const $todos = document.querySelector('.todos');
@@ -17,28 +17,33 @@ function render() {
   let html = '';
 
   todos.forEach(({ myId, content, completed }) => {
-    html += `<li id="${myId}" class="todo-item"><input class="custom-checkbox" type="checkbox" ${completed ? 'checked' : ''} id="ck-${myId}"><label for="ck-${myId}"> ${content} </label><button class="remove">X</button><i class="remove-todo far fa-times-circle"></i></li>`;
+    html += `<li id="${myId}" class="todo-item">
+    <input class="custom-checkbox" type="checkbox" ${completed ? 'checked' : ''} id="ck-${myId}"><label for="ck-${myId}"> ${content} </label>
+    <i class="remove-todo far fa-times-circle"></i>
+    </li>`;
   });
 
   $todos.innerHTML = html;
 }
 
 function generateID() {
-  return todos.length ? Math.max(...todos.map(({ id }) => id)) + 1 : 1;
+  return todos.length ? Math.max(...todos.map(({ myId }) => myId)) + 1 : 1;
 }
 
 function addTodo(content) {
-  todos = [{ id: generateID(), content, completed: false }, ...todos];
+  todos = [{ myId: generateID(), content, completed: false }, ...todos];
+  console.log(addTodo());
   render();
 }
 
-function removeTodo(id) {
-  todos = todos.filter(todo => todo.id !== +id);
+function removeTodo(myId) {
+  todos = todos.filter(todo => todo.myId !== +myId);
+  console.log(removeTodo());
   render();
 }
 
-function completeTodo(id) {
-  todos = todos.map(todo => (todo.id === +id ? { ...todo, completed: !todo.completed } : todo));
+function completeTodo(myId) {
+  todos = todos.map(todo => (todo.myId === +myId ? { ...todo, completed: !todo.completed } : todo));
   console.log(todos);
   render();
 }

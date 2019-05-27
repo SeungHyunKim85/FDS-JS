@@ -37,7 +37,24 @@ console.log(render());
 
 ## 2번 문제
 ```
+let todos = [
+  { id: 3, content: 'HTML', completed: false },
+  { id: 2, content: 'CSS', completed: true },
+  { id: 1, content: 'Javascript', completed: false }
+];
 
+function getValues(key) {
+  todos.map(function(key) {
+    let rObj = {};
+    rObj[key] => todos.key;
+    return rObj;
+  });
+// map 사용, 재할당해줘야
+};
+
+console.log(getValues('id')); // [3, 2, 1]
+console.log(getValues('content')); // [ 'HTML', 'CSS', 'Javascript' ]
+console.log(getValues('completed')); // [ false, true, false ]
 ```
 
 

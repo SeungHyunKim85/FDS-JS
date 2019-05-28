@@ -32,13 +32,11 @@ function generateID() {
 
 function addTodo(content) {
   todos = [{ myId: generateID(), content, completed: false }, ...todos];
-  console.log(addTodo());
   render();
 }
 
 function removeTodo(myId) {
   todos = todos.filter(todo => todo.myId !== +myId);
-  console.log(removeTodo());
   render();
 }
 
@@ -55,12 +53,12 @@ $inputTodo.onkeyup = function (e) {
 }
 
 $todos.addEventListener('click', e => {
-  if (!e.target.classList.contains('remove')) return;
+  if (!e.target.classList.contains('remove-todo')) return;
   removeTodo(e.target.parentNode.id);
 });
 
 $todos.addEventListener('change', e => {
-  if (!e.target.classList.contains('checkbox')) return;
+  if (!e.target.classList.contains('custom-checkbox')) return;
   completeTodo(e.target.parentNode.id);
 });
 
